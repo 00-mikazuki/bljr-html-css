@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-image: linear-gradient(to right, rgb(255, 81, 81), rgb(197, 76, 197), rgb(81, 81, 255));
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: .5rem;
+}
+
+nav h1 {
+    font-size: 1.7rem;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+}
+
+main ul li {
+    width: 250px;
+    margin: 20px 0;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .8);
+    transition: 1s;
+}
+
+main ul li:nth-child(odd) {
+    border-radius: 0 1rem 0 1rem;
+    transform: rotate(-15deg);
+    right: 40px;
+}
+
+main ul li:nth-child(even) {
+    border-radius: 1rem 0 1rem 0;
+    transform: rotate(15deg);
+    left: 40px;
+}
+
+main ul li a {
+    color: white;
+    text-decoration: line-through;
+    font-size: 1.2rem;
+    display: inline-block;
+}
+
+main ul li:nth-child(odd) a {
+    transform: translateX(-60px);
+}
+
+main ul li:nth-child(even) a {
+    transform: translateX(60px);
+}
+
+main ul li:hover {
+    cursor: crosshair;
+    /* left: 0;
+    right: 0; */
+}
+
+main ul li:hover a {
+    animation: a-hover 2s forwards ;
+}
+
+main ul li:nth-child(odd):hover {
+    animation: li-hover 1s forwards;
+    right: 0;
+}
+
+main ul li:nth-child(even):hover {
+    animation: li-hover 1s forwards;
+    left: 0;
+}
+
+
+
+
+@keyframes li-hover {
+    from {}
+    to {
+        background: rgb(249, 107, 249);
+        /* background: linear-gradient(to left, red, purple, blue); */
+        transform: rotate(0);
+        border-radius: 1rem;
+    }
+}
+
+@keyframes a-hover {
+    from {}
+    to {
+        transform: translateY(0);
+        text-decoration: none;
+    }
+}

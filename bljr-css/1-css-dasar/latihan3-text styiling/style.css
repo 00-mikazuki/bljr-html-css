@@ -1,0 +1,54 @@
+h1 {
+    font-size: 150px;
+    color: #abcdef;
+    /* 
+    color (memberi warna pada tulisan)
+    color: nama warna (red, lightseagreen, royalblue, ...)
+    color: hexadecimal (6 digit 0-f) (#ff0000, #20b2aa, #4169e1, ...)
+    color: rgb (rgb(255,0,0), rgb(32,178,170), rgb(65,105,225), ...)
+    */
+
+    text-decoration: line-through;
+    /*
+    text-decoration (mengatur decoration pada teks) 
+    text-decoration: none (biasa digunakan utk menghilangkan garis bawah link), underline (garis bawah), overline (garis atas), line-through (garis tengah)
+    */
+
+    text-transform: uppercase;
+    /* 
+    text-transform (mengubah jenis huruf menjadi huruf besar, kecil / kapital 
+    text-transform: none, lowercase (huruf kecil semua), uppercase (huruf besar semua), capitalize (huruf setiap awal kata kapital)
+    */
+
+    letter-spacing: 5px;
+    /* 
+    letter-spacing (mengatur spasi antar huruf) 
+    letter-spacing: normal, (value)px
+    */
+}
+
+p {
+    text-align: justify;
+    /* 
+    text-align (mengatur format paragraf / teks) 
+    text-align: left (rata kiri), right (rata kanan), center (rata tengah), justify (rata kiri-kanan)
+    */
+
+    text-indent: 100px;
+    /* 
+    text-indent (memberi indentasi pada paragraf / teks 
+    text-indent: (value)px, (value)%
+    */
+
+    text-transform: capitalize;
+
+    word-spacing: 10px;
+    /* 
+    word-spacing (mengatur spasi antar kata) 
+    word-spacing: normal, (value)px
+    */
+}
+
+a {
+    text-decoration: none;
+}

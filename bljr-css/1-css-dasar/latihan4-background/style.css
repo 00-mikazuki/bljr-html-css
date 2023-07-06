@@ -1,0 +1,28 @@
+body {
+    background-color: wheat;
+    /* background-color (mengatur warna pada background) */
+
+    background-image: url(gambar/bg1.png);
+    /* background-image (mengatur gambar yang akan digunakan pada background) */
+    
+    background-repeat: no-repeat;
+    /* 
+    background-repeat (mengatur jenis pengulangan gambar pada background) 
+    background-repeat: repeat-x (mengulangi gambar terhadap garis x), repeat-y (mengulangi gambar terhadap garis y), no-repeat (tidak mengulangi gambar)
+    jika menggunakan value no-repeat maka akan bisa akses ke property background-position
+    */
+
+    background-position: bottom center;
+    /* 
+    background-position (mengatur posisi gambar pada background)
+    thd sumbu y = top/center/bottom
+    thd sumbu x = left/center/right
+    */
+}
+
+/* 
+shorthand / singkatan
+background: color url() position repeat;
+background: lightgreen url(bg.png) top left no-repeat
+urutan dpt ditukar
+*/

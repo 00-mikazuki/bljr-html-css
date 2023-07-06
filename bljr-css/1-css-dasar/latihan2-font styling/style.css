@@ -1,0 +1,31 @@
+h1 {
+    /* font-family (jenis font): font1, font2, generic font */
+    /* sans-serif(tipe font yg tdk memiliki kaki), serif (tipe font yg memiliki kaki) */
+    font-family: arial, verdana, sans-serif ;
+
+    /* font-size (ukuran font): (value)px / (value)% / em */
+    font-size: 100px;
+
+    /* font-weight (tebal font): lighter / normal / 100-900 / bold / bolder */
+    font-weight: normal;
+
+    /* font-variant (variasi font): normal, small-caps; */
+    font-variant: small-caps;
+
+    /* font-style: normal, italic (jika font family memiliki type italic), oblique (memiringkan huruf jika font family tidak memiliki type italic); */
+    font-style: italic;
+    
+}
+
+p {
+    font-family: georgia, serif;
+
+    /* line-height (mengatur jarak antar garis): normal, px, em */
+    line-height: 50px;
+}
+
+/* 
+shorthand / singkatan 
+font: font-style font-variant font-weight font-size(wajib)/line-height font-family(wajib);
+font: italic normal bold 16px/18px helvetica,arial, sans-serif;
+*/

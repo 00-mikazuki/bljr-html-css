@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, rgb(180, 2, 180), lightskyblue);
+}
+
+.outer {
+    width: 200px;
+    height: 200px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    border: 20px solid rgb(155, 55, 248);
+    box-shadow: 20px 20px 0 20px rgba(0,0,0,.6);
+    animation: rolling 2s linear infinite;
+}
+
+.pupils {
+    width: 1.7rem;
+    height: 1.7rem;
+    background: black;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 25%;
+    right: 25%;
+}
+
+@keyframes rolling {
+    from {}
+    to {
+        transform: rotate(360deg);
+    }
+}

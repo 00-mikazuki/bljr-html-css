@@ -1,0 +1,11 @@
+div {
+    width: 200px;
+    height: 200px;
+    background-color: coral;
+    margin: 20px auto;
+    padding: 50px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black;
+    /* border menambah ukuran elemen */
+}

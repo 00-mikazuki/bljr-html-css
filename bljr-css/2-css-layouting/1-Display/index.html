@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Display</title>
+    <style>
+        a {
+        /* tag dgn default display inline tidak dapat mengatur tinggi dan lebar */
+            background-color: blanchedalmond;
+            width: 200px;
+            height: 200px;
+            display: inline-block;
+        }
+        img {
+        /* tag dgn default display inline yg bisa mengatur tinggi dan lebar hanya tag <img> */
+            width: 200px;
+            height: 200px;
+            display: none;
+            /* display: none (menghilangkan sebuah elemen) */
+        }
+        .main {
+            width: 600px;
+            background-color: aqua;
+        }
+        .main h2 {
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Selamat Datang di Website Kami</h1>
+    </div>
+
+    <div class="navigasi">
+        <h2>Daftar Link</h2>
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        <a href="#">Link 4</a>
+    </div>
+
+    <div class="main">
+        <h2>Judul Artikel</h2>
+        <h2>Judul Artikel</h2>
+        <img src="MU.png" alt="">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur, qui sint. <span>perferendis ab minima adipisci!</span> Ipsa et magnam perferendis quae dolorem, consequuntur necessitatibus ex corrupti delectus unde sit inventore?</p>
+    
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem laborum ullam hic, est explicabo perspiciatis mollitia quae magnam dolorem vel accusamus facilis, beatae deserunt vitae. Culpa cumque temporibus voluptatibus ab!</p>
+    
+    </div>
+
+    <div class="copyright">
+        <p>Copyright 2023. Juan</p>
+    </div>
+</body>
+</html>

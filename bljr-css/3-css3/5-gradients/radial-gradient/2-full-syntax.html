@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radial Gradient 2</title>
+    <style>
+        div {
+            width: 600px;
+            height: 300px;
+            margin: 50px auto;
+            background-image: radial-gradient(circle closest-side, red, blue);
+            /* radial-gradient (memberikan gradasi warna secara melingkar) */
+            /* 
+            syntax lengkap 
+            background-image: radial-gradient(
+                <tipe> (ellipse / circle) <jangkauan> at <posisi-y> <posisi-x>, (salah satu saja gpp)
+                warna-1, 
+                ..., 
+                warna-n
+            );
+            */
+            /* 
+            jangkauan
+            closest-side (sisi terdekat)
+            closest-corner (sudut terdekat)
+            farthest-side (sisi terjauh)
+            farthest-corner (sudut terjauh)
+            */
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

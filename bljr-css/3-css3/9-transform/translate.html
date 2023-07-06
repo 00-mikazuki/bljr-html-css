@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 Transform: translate</title>
+    <style>
+        p {
+            font-size: 20px;
+            text-align: center;
+        }
+        /* 
+        Transform
+            scale(angka), scaleX(angka), scaleY(angka)
+            rotate(deg), rotateX(deg), rotateY(deg)
+            skew(deg), skewX(deg), skewY(deg)
+            translate(px), translateX(px), translateY(px)
+        dapat menggunakan lebih dari 1
+        */
+        .kotak {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            margin: 50px auto 0;
+            transition: 1s;
+        }
+        .kotak:hover {
+            transform: translate(50px);
+            /* transform: translate(n) */
+            /* marubah posisi elemen kekanan (thd sumbu x) n px */
+
+            /* transform: translate(nx, ny) */
+            /* merubah posisi elemen thd sumbu x sebesar nx px dan perbesar merubah posisi elemen thd sumbu y sebesar ny px */
+
+            /* transform: translateX(n) */
+            /* merubah posisi elemen thd sumbu x sebesar nx px */
+
+            /* transform: translateY(n) */
+            /* erbesar merubah posisi elemen thd sumbu y sebesar ny px */
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="kotak"></div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, dolor! Quibusdam maxime reiciendis, nisi voluptatibus autem qui facilis quisquam odio impedit corrupti laborum tempora sunt labore vitae illo? Veniam, nemo.</p>
+</body>
+</html>

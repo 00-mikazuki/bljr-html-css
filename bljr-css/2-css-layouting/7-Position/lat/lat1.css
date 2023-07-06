@@ -1,0 +1,55 @@
+div {
+    background-color: maroon;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    position: absolute;
+}
+
+.main {
+    background-color: white;
+    width: 800px;
+    height: 400px;
+    margin: 100px auto;
+    position: relative;
+}
+
+.satu {
+    top: -50px;
+    left: -50px;
+}
+
+.dua {
+    top: -50px;
+    right: -50px;
+}
+
+.tiga {
+    bottom: -50px;
+    left: -50px;
+}
+
+.empat {
+    bottom: -50px;
+    right: -50px;
+}
+
+.lima {
+    top: 0;
+    left: 0;
+}
+
+.enam {
+    top: 0;
+    right: 0;
+}
+
+.tujuh {
+    bottom: 0;
+    left: 0;
+}
+
+.delapan {
+    bottom: 0;
+    right: 0;
+}

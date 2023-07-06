@@ -1,0 +1,24 @@
+.satu {
+    width: 200px;
+    height: 200px;
+    background-color: lightgreen;
+    margin: 50px auto;
+    /* satu value: semua */
+    /* value pertama: atas-bawah; value kedua: kiri-kanan */
+}
+
+.dua {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    margin: 30px auto 40px;
+    /* value pertama: atas; value kedua: kiri-kanan; value ketiga: bawah */
+}
+
+.tiga {
+    width: 50px;
+    height: 50px;
+    background-color: violet;
+    margin: 10px 20px 30px 40px;
+    /* margin: atas kanan bawah kiri */
+}

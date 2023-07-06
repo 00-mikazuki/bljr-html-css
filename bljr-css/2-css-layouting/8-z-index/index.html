@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan z-index</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+        }
+        .satu {
+            background-color: #CD7F32;
+            z-index: 1;
+            /* z-index semakin besar angka maka elemen berada semakin depan (konsep dimensi x, y, z) */
+        }
+        .dua {
+            background-color: silver;
+            top: 100px;
+            left: 100px;
+            z-index: 9999;
+            /* paling depan 999 paling belakang -999 */
+        }
+        .tiga {
+            background-color: gold;
+            top: 200px;
+            left: 200px;
+        }
+        /* z-index digunakan utk mengatur tumpukan elemen non-static (relative, absolute, fixed) */
+    </style>
+</head>
+<body>
+    <div class="satu"></div>
+    <div class="dua"></div>
+    <div class="tiga"></div>
+</body>
+</html>

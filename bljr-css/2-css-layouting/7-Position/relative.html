@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Relative</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+        }
+        .satu {
+            background-color: #CD7F32;
+        }
+        .dua {
+            background-color: silver;
+            position: relative;
+            /* position: static (default), relative, absolute, fixed */
+            /* non-static can access property: top left bottom right */
+            /* relative (meninggalkan ruang, bergerak relatif thd posisi awal) */
+            top: 30px;
+            left: 30px;
+        }
+        .tiga {
+            background-color: gold;
+        }
+    </style>
+</head>
+<body>
+    <div class="satu"></div>
+    <div class="dua"></div>
+    <div class="tiga"></div>
+</body>
+</html>

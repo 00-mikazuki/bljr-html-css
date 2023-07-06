@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Grid | Min & Max content</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background-color: #ddd;
+    }
+
+    .container {
+      width: 60%;
+      margin: 50px auto;
+      display: grid;
+      grid-template-columns: 1fr max-content 1fr;
+      /* 
+      min-content & max-content
+      menentukan seberapa besar ukuran grid track berdasarkan content pada sebuah item
+      min-content = mengecil sesuai ukuran content (max 1 kata, akan dipecah tiap kata dan akan menggunakan ukuran kata yg paling panjang)
+      max-content = sesuai ukuran content seluruh kata
+      */
+    }
+
+    .item {
+      background-color: rgb(138, 209, 254);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .item:nth-child(even) {
+      background-color: rgb(255, 142, 142);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">Lorem ipsum dolor sit amet.</div>
+    <div class="item">6</div>
+    <div class="item">7</div>
+    <div class="item">8</div>
+    <div class="item">9</div>
+  </div>
+</body>
+</html>

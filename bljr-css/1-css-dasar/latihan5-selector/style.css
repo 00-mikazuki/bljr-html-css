@@ -1,0 +1,55 @@
+body {
+    font-family: arial;
+}
+
+h1, h2 {
+/* separator / grouping dgn tag html *
+/* separator dg prop yg sama menggunakan (,) */
+    color: green;
+}
+
+h2 {
+    font-style: it;
+}
+
+ul li a {
+/* separator */
+/* /* separator dg prop yg spesifik menggunakan ( )  */
+/* pakai tag ul saja tdk berubah krn ada isinya tag li dan a */
+/* <a> yg berada dalam <li> dan berada dalam <ul> */
+    color: orange;
+}
+
+ol li a {
+    color: red;
+}
+
+#p1 {
+/* selector id menggunakan (#) */
+/* 
+id
+- sebuah elemen HTML hanya boleh memiliki 1 id
+- setiap halaman hanya boleh memiliki 1elemen dengan id tsb
+- dpt digunakan sbg penanda halaman utk link
+- digunakan utk javascript
+- sebaiknya tdk digunakan utk CSS (lbh baik menggunakan class)
+*/
+    color: orange;
+}
+
+.p2 {
+/* selector class menggunakan (.) */
+    color: red;
+}
+
+.cetak-tebal {
+/* class dapat berisi 2 / dipisah / dikelompokkan lagi lebih spesifik */
+    font-weight: bold;
+}
+
+p.cetak-tebal {
+/* tag p yg memiliki class cetak-tebal */
+    font-size: 30px;
+}
+
+/* sebisa mungkin gunakan tag HTML -> class, jgn gunakan id. krn beban bertambah besar */

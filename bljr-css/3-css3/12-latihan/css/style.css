@@ -1,0 +1,177 @@
+/* Font */
+@font-face {
+    font-family: 'BebasNeue';
+    src: url(../font/BebasNeue-Regular.woff) format('woff');
+}
+
+/* Style Utama */
+body {
+    font: 18px/36px 'BebasNeue', 'Arial Narrow', arial, sans-serif;
+    background-color: #999;
+}
+
+h1 {
+    font-size: 60px;
+    margin: 50px 0;
+    text-align: center;
+    text-shadow: 0px 0px 3px white;
+}
+
+.container {
+    width: 600px;
+    background-color: white;
+    margin: auto;
+    padding: 15px;
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, .25);
+    border-radius: 15px;
+}
+
+.gallery li {
+    width: 120px;
+    height: 120px;
+    margin: 0 12px 0 12px;
+    border: 2px solid #666;
+    float: left;
+    position: relative;
+}
+
+.gallery li, .gallery li a img, .gallery li span {
+    border-radius: 50%;
+}
+
+.gallery li span {
+    display: block;
+    width: 120px;
+    height: 120px;
+    background-color: rgba(200, 200, 200, .5);
+    position: absolute;
+    top: 0;
+    text-align: center;
+    line-height: 120px;
+    color: black;
+    opacity: 0;
+    transform: scale(0);
+    transition: .5s;
+    /* .3s / 300ms */
+}
+
+.gallery li a:hover span {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.clear {
+    clear: both;
+}
+
+/* Overlay */
+.overlay {
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    padding: 0;
+    position: fixed;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0);
+    z-index: 9999;
+    text-align: center;
+    padding: 100px 0;
+    transition: .5s;
+}
+
+.overlay:target {
+    width: auto;
+    height: auto;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .6);
+}
+
+.overlay img {
+    max-height: 100%;
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, .25);
+}
+
+.overlay, .overlay:target img, .overlay .close {
+    animation: fade .5s;
+}
+
+.overlay .close {
+    position: absolute;
+    top: 20px;
+    right: 20%;
+    margin-top: -50px;
+    color: white;
+    font-size: 15px;
+    line-height: 20px; 
+    text-decoration: none;
+    padding: 6px 7px 5px 7px;
+    background-color: #777;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, .25);
+    transition: .25s;
+}
+
+.overlay .close:hover {
+    background-color: #444;
+}
+
+.overlay:target .close {
+    animation: slidedown .5s .5s forwards;
+}
+
+.overlay:target .next, .overlay:target .prev {
+    animation: fade .5s .5s forwards;
+}
+
+/* navigasi */
+.next, .prev {
+    width: 70px;
+    height: 70px;
+    background-image: url(../img/right.png);
+    background-size: cover;
+    position: absolute;
+    text-indent: -9999px;
+    top: 43%;
+    margin-left: 40px;
+    opacity: 0;
+}
+
+.prev {
+    background-image: url(../img/left.png);
+    margin-left: -108px;
+}
+
+/* Animasi */
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomfade {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slidedown {
+    0% {
+        opacity: 0;
+        margin-top: -50px;
+    }
+    100% {
+        opacity: 1;
+        margin-top: 0;
+    }
+}
+

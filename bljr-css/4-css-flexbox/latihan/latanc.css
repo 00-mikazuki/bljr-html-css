@@ -1,0 +1,115 @@
+.terakhir {
+    border: 2px black solid;
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8vw;
+    margin-right: 8vw;
+}
+
+.terakhir .kiri5 {
+    position: relative;
+}
+
+.terakhir .kiri5 .begron {
+    margin-left: -16.5vw;
+    height: 60vh;
+    background-color: #e8dbfc;
+    border-radius: 57px 56px 56px 56px;
+    -webkit-border-radius: 57px 56px 56px 56px;
+    -moz-border-radius: 57px 56px 56px 56px;
+    border: 4px solid #edd8d8;
+}
+
+.terakhir .kiri5 img {
+    margin-left: -18.3vw;
+    height: 65vh;
+    margin-top: -70vh;
+}
+
+.terakhir .kiri5 .rate ul {
+    margin-left: -18.5vw;
+    margin-top: -38vh;
+    background-color: #febb28;
+    color: #f3f5f9;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.terakhir .kiri5 .rate ul li {
+    list-style-type: none;
+    font-size: 13px;
+    color: black;
+    font-weight: bold;
+}
+
+.terakhir .kiri5 .ig {
+    margin-left: -0.5vw;
+    margin-top: -7.5vh;
+    background-color: #107f58;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.terakhir .kiri5 .ig i {
+    font-size: 27px;
+    color: #f3f5f9;
+}
+
+.terakhir .kanan5 {
+}
+
+.terakhir .kanan5 .quote1 {
+    background-color: white;
+    width: 25vw;
+    border-radius: 0.5rem;
+    padding: 12px;
+    font-size: 17px;
+    /* margin-right: -20vw; */
+    position: relative;
+    right: -20vw;
+}
+
+.terakhir .kanan5 .quote1 h5 {
+    margin-top: 1vh;
+}
+
+.terakhir .kanan5 .quote2 {
+    background-color: #0ba876;
+    color: #f3f5f9;
+    width: 25vw;
+    border-radius: 0.5rem;
+    padding: 12px;
+    font-size: 17px;
+    position: relative;
+    left: -5px;
+}
+
+.terakhir .kanan5 .quote2 h5 {
+    margin-top: 1vh;
+}
+
+.terakhir .kanan5 .quote3 {
+    background-color: white;
+    width: 25vw;
+    border-radius: 0.5rem;
+    padding: 12px;
+    font-size: 17px;
+    position: relative;
+    right: -20vw;
+}
+
+.terakhir .kanan5 .quote3 h5 {
+    margin-top: 1vh;
+}

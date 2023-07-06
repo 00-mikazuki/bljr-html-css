@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+    <style>
+        .kotak {
+            width: 200px;
+            height: 200px;
+            background-color: salmon;
+            animation: animasikotak 2s ease 2 alternate-reverse;
+            /* animation */
+            /* 
+            animation-name: [animation-name]
+            animation-duration: n s | ms
+            animation-timing-function:
+            animation-delay: n s | ms
+            animation-iteration-count: <angka> | infinite
+            animation-direction: normal | reverse | alternate |alternate-reverse
+                normal (dari awal ke akhir), reverse (dari akhir ke awal), alternate (awal-akhir lalu akhir-awal), alternate-reverse (akhir-awal lalu awal-akhir)
+            animation-fillmode: none | forwards | backwards | both
+                forwards (berhenti di keadaan akhir)
+            animation-play-state: running | paused
+            */
+            
+            /* shorthand */
+            /* 
+            animation:
+            [name] [duration] [timing-function] [delay] [iteration-count] [direction] [fill-mode] [play-state]
+            */
+        }
+        @keyframes animasikotak {
+            0% {
+                width: 200px;
+            }
+            50% {
+                width: 500px;
+                height: 200px;
+            }
+            100% {
+                width: 500px;
+                height: 500px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="kotak"></div>
+</body>
+</html>

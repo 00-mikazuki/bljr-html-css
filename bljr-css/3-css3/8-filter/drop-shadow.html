@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 Filter: drop-shadow</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        img {
+            width: 700px;
+            filter: drop-shadow(5px 5px 5px black);
+            /* membuat gambar menjadi transparan */
+            /* default 1 */
+            /* dapat digunakan untuk gambar dan text (box-shadow dan text-shadow) */
+        }
+        /* 
+        Filter
+            blur(px)
+            brightness(angka | %)
+            contrast(angka | %)
+            saturate(angka | %)
+            grayscale(angka | %)
+            sepia(angka | %)
+            hue-rotate(deg)
+            invert(angka | %)
+            opacity(angka | %)
+            drop-shadow(seperti box-shadow)
+        */
+        /* filter menggunakan hardware acceleration (lebih cepat), property menggunakan browser */
+    </style>
+</head>
+<body>
+    <img src="yuuji.jpg" alt="Itadori Yuuji">
+</body>
+</html>

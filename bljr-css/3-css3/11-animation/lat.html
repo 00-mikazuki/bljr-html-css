@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes animasi {
+            0% {
+                top: 0;
+                left: 0;
+                bottom: 400px;
+                right: 700px;
+            }
+            25% {
+                top: 0;
+                left: 700px;
+                bottom: 400px;
+                right: 0;
+            }
+            50% {
+                top: 400px;
+                left: 700px;
+                bottom: 0;
+                right: 0;
+            }
+            75% {
+                top: 400px;
+                left: 0;
+                bottom:0;
+                right: 700px;
+            }
+            100% {
+                top: 0;
+                left: 0;
+                bottom: 400px;
+                right: 700px;
+            }
+        }
+        .container {
+            width: 800px;
+            height: 500px;
+            border: 1px solid black;
+            margin: 50px auto;
+            position: relative;
+        }
+        .kotak {
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            position: absolute;
+            top: 0;
+            left: 0;
+            animation: animasi 2s ease infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="kotak"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+/* pseudo-class yang berhubungan dengan link */
+.hello:link {
+/* default link */
+    color: orange;
+}
+.hello:hover {
+/* saat kursor berada di over/atas link */
+    color: green;
+    font-family: arial;
+    font-size: 20px;
+}
+.hello:active {
+/* pada saat link aktif/diklik */
+    font-style: italic;
+}
+.hello:visited {
+/* pada saat link sudah pernah divisit/dikunjungi */
+    color: red;
+}
+
+/* pseudo-class yang berhubungan dengan posisi elemen */
+li:first-child a {
+/* <li> yg merupakan anak pertama dari <ul>, lalu <a> didalamnya */
+    color: green;
+}
+li:last-child a {
+/* <li> yg merupakan anak terakhir dari <ul>, lalu <a> didalamnya */
+    color: brown;
+}
+li:nth-child(3n) a {
+/* :nth-child() (anak ke- spesifik) */
+/* nth-child(3n+1) (anak ke- kelipatan 3 dimulai dari 1; 1, 4, 7, ...) , dll */
+/* nth-child(even) (anak ke- genap), nth-child(odd) (anak ke- ganjil) */
+/* <li> yg merupakan anak ke- kelipatan 3 dari <ul>, lalu <a> didalamnya */
+    color: black;
+}
+
+li:nth-child(even) a:hover {
+/* <li> yg merupakan anak ke- ganjil lalu saat kursor berada diatas <a> didalamnya */
+    color: red;
+}
+
+p:first-of-type {
+/* :first-of-type (memilih elemen pertama dari sebuah jenis / tipe tag) */
+/* :last-of-type (memilih elemen terakhir dari sebuah jenis / tipe tag) */
+/* <p> yang pertama */
+    color: red;
+}

@@ -1,0 +1,92 @@
+.container {
+    width: 600px;
+    height: 150px;
+    border: 5px solid #333;
+    margin: 30px auto;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+    /* elemen parent menjadi felxbox dan elemen didalamnya berperilaku flex juga */
+
+    /* flex-direction: row; */
+    /*
+    mengatur arah / urutan items di dalam container.
+    flex-direction: row | row-reverse | column | column-reverse; 
+    default = row
+    row (horizontal kiri-kanan), row-reverse (horizontal kanan-kiri),
+    column (vertikal atas-bawah), column-reverse (vertikal bawah-atas)
+    */
+
+    /* flex-wrap: wrap-reverse; */
+    /* 
+    secara default, semua items didalam container akan berada dalam satu baris meskipun ukuran tidak cukup, wrap memungkinkan untuk memindahkan items ke baris bawahnya.
+    flex-wrap: nowrap | wrap | wrap-reverse;
+    default = nowrap
+    wrap (memindahkan elemen yg tidak cukup pada container ke baris baru baru mulai dari elemen pertama), 
+    wrap-reverse (memindahkan elemen yg tidak cukup pada container ke baris baru mulai dari elemen terakhir)
+    */
+
+    /* justify-content: space-around; */
+    /* 
+    mengatur jarak antar items.
+    justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly;
+    default = flex-start
+    flex-start (rata kiri), flex-end (rata kanan), center (rata tengah), 
+    space-between (jarak diantara items), space-around (membagi rata sisi kiri dan kanan tiap elemen), space-evenly (jarak antar items kiri dan kanan sama)
+    */
+
+    align-items: flex-start;
+    /* 
+    mengatur perilaku penjajaran items terhadap cross axis.
+    align-items: flex-start | flex-end | center | stretch | baseline;
+    default = flex-start
+    flex-start (rata atas), flex-end (rata bawah), center (rata tengah),
+    stretch (meregang jika elemen tdk memiliki height), baseline (rata tengah berdasar tulisan yg ada didalam tiap elemen)
+    */
+
+    /* align-content: ; */
+    /* 
+    mengatur perilaku penjajaran items terhadap cross axis (hanya berfungsi ketika items lebih dari 1 baris).
+    align-content: flex-start | flex-end | center | space-between | space-around;
+    flex-start (rata atas), flex-end (rata bawah), center (rata tengah),
+    stretch (meregang jika elemen tdk memiliki height),
+    space-between (jarak atas/bawah diantara items), space-around (membagi rata sisi atas dan bawah tiap elemen)
+    */
+}
+
+.container div {
+    /* width: 120px;
+    height: 120px; */
+    background-color: lightblue;
+    margin: 2px;
+    flex-grow: 1;
+    /* ukuran semua items sama dan akan memenuhi container */
+}
+
+/* Property pada items */
+
+/* 
+.satu { order: 3; }
+.dua { order: 4; }
+.tiga { order: 2; }
+.empat { order: 1; }
+*/
+/*
+order: ;
+mengatur urutan items.
+default = 0
+*/
+
+.container div.dua {
+    flex: 2;
+    align-self: flex-end;
+}
+/* 
+flex-grow / flex
+mengatur ukuran items terhadap item lainnya.
+*/
+
+/* 
+align-self: auto | flex-start | flex-end | center | baseline | stretch;
+mengatur perilaku penjajaran sebuah item yang spesifik terhadap cross axis (hanya mengatur salah satu elemen)
+*/
