@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Elements</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.125em;
+        line-height: 1.6;
+        color: #333;
+        padding: 2em;
+      }
+
+      .hero {
+        display: grid;
+        grid-gap: 2em;
+        align-items: center;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      @media (min-width: 960px) {
+        .hero {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <h1 style="margin-bottom: 1500px;">Image Elements</h1>
+    <img
+      src="img/jjk-small.jpg"
+      alt="Jujutsu"
+      srcset="
+        img/jjk-small.jpg 500w,
+        img/jjk-medium.jpg 750w,
+        img/jjk-large.jpg 1000w
+      "
+      sizes="(min-width: 1200px) 50vw"
+      loading="lazy"
+    /> -->
+    <!--
+        menggunakan device pixel ratio (kepadatan pixel)
+        srcset="
+          img/jjk-small.jpg  1x,
+          img/jjk-medium.jpg  2x,
+          img/jjk-large.jpg  3x
+        "
+    -->
+
+    <div class="hero">
+      <div class="hero-text">
+        <h1>Hello WPU</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta praesentium excepturi neque consequuntur rem adipisci nobis provident ab tenetur soluta, veritatis eaque debitis quasi eligendi rerum deleniti impedit repudiandae voluptatibus?</p>
+      </div>
+      <picture>
+        <source media="(min-width: 960px)" srcset="img2/jjk-large.jpg" sizes="50vw">
+        <source media="(min-width: 600px)" srcset="img2/jjk-medium.jpg">
+        <img src="img2/jjk-small.jpg" alt="Jujutsu">
+      </picture>
+    </div>
+    
+    
+  </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audio & Video</title>
+  <!-- <style>
+    body, h1 {
+      padding: 0;
+      margin: 0;
+      font-family: arial;
+    }
+
+    .hero {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      /* background-color: rgba(0, 0, 0, .3); */
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.3), rgba(0, 255, 255, 0.3));
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 3em;
+      position: relative;
+      min-height: 100vh;
+      min-width: 100vw;
+      overflow: hidden;
+    }
+
+    .video-bg {
+      position: absolute;
+      /* top: 0; */
+      bottom: 0;
+      left: 0;
+      /* right: 0; */
+      min-height: 100%;
+      min-width: 100%;
+      z-index: -1;
+    }
+  </style> -->
+</head>
+<body>
+  <!-- <audio src="audio/1.mp3" controls></audio> -->
+
+  <!-- <figure>
+    <figcaption>
+      Dengarkan "Spring In My Step - Silent Partner"
+    </figcaption>
+    <audio controls autoplay loop muted>
+      <source src="audio/1.ogg" type="audio/ogg">
+      <source src="audio/1.mp3" type="audio/mpeg">
+    </audio>
+  </figure> -->
+  <!-- autoplay tidak akan dilakukan web browser karena kebanyakan user terganggu dgn suara yg muncul tiba-tiba -->
+
+  <!-- <video src="video/1.mp4" width="400" controls></video> -->
+
+  <!-- <figure>
+    <figcaption>
+      Spring In My Step - Silent Partner
+    </figcaption>
+    <video controls width="400" poster="img/video-bg.jpg" loop autoplay muted>
+      <source src="video/1.webm" type="video/webm">
+      <source src="video/1.mp4" type="video/mp4">
+      Browser tidak mendukung tag <code>video</code>
+    </video>
+  </figure> -->
+  <!-- autoplay akan dilakukan web browser jika audio muted -->
+
+  <!-- <div class="hero">
+    <h1>Welcome to My Website</h1>
+    <video class="video-bg" src="video/1.webm" autoplay muted loop></video>
+  </div> -->
+
+  <video controls width="400">
+    <source src="video/1-apa-itu-html5.webm" type="video/webm">
+    <track src="captions/caption2.vtt" kind="captions" title="Bahasa Indonesia" srclang="id">
+    <track src="captions/caption2.vtt" kind="captions" title="English" srclang="en">
+  </video>
+
+  <!-- mengambil video dari youtube menggunakan embed -->
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/Q2VqCG13ejA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+</body>
+</html>
