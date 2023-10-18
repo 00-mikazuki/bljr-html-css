@@ -32,7 +32,7 @@
       }
     }
   </script>
-  <title>Belajar TailwindCSS</title>
+  <title>Belajar TailwindCSS: Pseudo Class dan Dark Mode</title>
   <style type="text/tailwindcss">
     #toggle:checked ~ label div.toggle-circle {
       @apply translate-x-4;
@@ -41,58 +41,6 @@
 </head>
 <body class="dark:bg-slate-800 dark:text-slate-200">
   <h1 class="text-6xl font-bold text-center my-8">Belajar <span class="bg-gradient-to-r from-blue-500 to-teal-400 bg-clip-text text-transparent">TailwindCSS</span></h1>
-
-  <!-- Spacing -->
-  <section class="mb-10 bg-gradient-to-tr from-indigo-200 via-red-300 to-yellow-300">
-    <h2 class="text-3xl text-center">Spacing</h2>
-    <div class="m-13 bg-red-200">Margin</div>
-    <div class="py-8 bg-red-200">Padding</div>
-  </section>
-
-
-  <!-- Sizing -->
-  <section class="mb-10 bg-green-200">
-    <h2 class="text-3xl text-center">Sizing</h2>
-    <div class="w-32 h-32 bg-regal-blue">Kotak 1</div>
-  </section>
-
-
-  <!-- Typography -->
-  <section class="font-inter max-w-3xl mx-auto">
-    <h2 class="mb-4 text-4xl font-bold">Belajar Mengenai Typografi pada TailwindCSS</h2>
-    <div class="mb-3 text-lg text-gray-500">
-      By <a href="#" class="text-gray-700 font-semibold">Juan Axl</a>, 1 Januari 2023
-    </div>
-    <p class="mb-4">Lorem ipsum dolor sit amet <a href="#" class="underline font-semibold text-blue-600">consectetur</a> adipisicing elit. Rem dolor inventore eum delectus soluta adipisci earum ullam quidem, cumque totam autem quibusdam! Commodi, minus praesentium? Iure a quibusdam est consectetur non maxime magni id perferendis sapiente, voluptate commodi optio pariatur vitae necessitatibus, esse suscipit ipsam officiis ratione molestiae? Dignissimos, libero.</p>
-    <blockquote class="mb-4 italic font-thin text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia repellendus cupiditate incidunt tempora nulla repudiandae harum, eos quos optio earum.</blockquote>
-    <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nam a tenetur ducimus? Vitae recusandae voluptatum harum nesciunt eius eos hic minus quod enim, atque optio numquam dolor labore tenetur!</p>
-  </section>
-
-
-  <!-- Backgound -->
-  <!-- arbitrary value (nilai yg bisa disisipkan langsung di class): mt-[<value>] -->
-  <div class="max-w-xl h-96 bg-[#bada55] mx-auto mt-[42px] overflow-y-scroll bg-fixed" style="background-image: url('https://source.unsplash.com/1000x600?computer');">
-    <p class="p-5 text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores iure, dolorem esse repellat delectus fuga quo nisi nihil, atque soluta cum libero autem. Deserunt officia ut quos beatae architecto voluptate odit rem a, nemo ab commodi dolorem cupiditate molestias ducimus ad maxime voluptatibus voluptates pariatur dolor ipsam facilis sapiente mollitia? Autem quas dolor voluptas, rerum quisquam ea repellat, officia cum sit temporibus fuga ab, alias rem tempore. Suscipit atque reprehenderit explicabo rem aspernatur doloremque repellendus distinctio, minus ex quasi ipsam rerum! Aliquam totam inventore quo tempora dolore dicta modi ea voluptates molestiae? Cupiditate recusandae modi ullam laboriosam debitis at odit eius nemo, ipsum ipsa possimus. Placeat explicabo et ipsa natus facilis modi magnam molestiae velit, a iure ut. Nostrum veniam vero maxime nam repudiandae unde consequuntur accusantium eligendi rerum laudantium iste ad, tempore mollitia explicabo libero. Eos corrupti rem, vero ut molestiae odit voluptates sint, quibusdam, natus molestias omnis minus. Voluptate, molestiae quidem at adipisci est asperiores doloribus consequatur voluptatem repellendus minima. Deserunt id maiores suscipit eaque voluptatibus culpa voluptates eos rem ea iusto unde atque laudantium dolor vitae architecto, molestiae eum amet provident voluptatem? Fugit sapiente qui placeat alias explicabo esse neque, laborum ex atque quae ipsa beatae culpa.</p>
-  </div>
-
-  
-  <!-- Border, Effects -->
-  <div class="mt-32 max-w-xl mx-auto h-96 bg-slate-300 bg-contain bg-no-repeat bg-center rounded-tr-xl border-8 border-slate-500 shadow-lg shadow-slate-500 overflow-hidden bg-blend-multiply" style="background-image: url('./img/1.jpeg');">
-    <div class="w-full h-full bg-blue-300 mix-blend-multiply"></div>
-  </div>
-
-
-  <!-- Filter -->
-  <div class="mt-32 max-w-xl mx-auto h-96 bg-slate-300 bg-contain bg-no-repeat bg-center rounded-tr-xl border-8 border-slate-500 shadow-lg shadow-slate-500 blur-sm hover:blur-none brightness-110" style="background-image: url('./img/1.jpeg');"></div>
-
-
-  <!-- Backdrop -->
-  <div class="mt-32 max-w-xl mx-auto h-96 bg-slate-300 bg-contain bg-no-repeat bg-center rounded-tr-xl border-8 border-slate-500 shadow-lg shadow-slate-500 overflow-hidden bg-blend-multiply flex" style="background-image: url('./img/1.jpeg');">
-    <div class="w-[200px] h-[200px] bg-white/30 m-auto backdrop-blur-md rounded-full"></div>
-  </div>
-
-  <hr class="my-20">
-
 
   <!-- Pseudo Class, Pseudo Element & Dark Mode -->
 

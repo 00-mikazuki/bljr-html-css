@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      // lightMode: 'class',
+      // mengubah mode sesuai dengan class yg diberikan
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          },
+          spacing: {
+            13: '3.25rem',
+          },
+          // custom font
+          fontFamily: {
+            inter: ['Inter'],
+          },
+          colors: {
+            'regal-blue': '#243c5a',
+            kopi: '#c0ffee'
+          }, 
+          animation: {
+            'spin-slow': 'spin 3s linear infinite',
+            'wiggle': 'wiggle 1s ease-in-out infinite',
+          },
+          keyframes: {
+            'wiggle': {
+              '0%, 100%': { transform: 'rotate(-3deg)'},
+              '50%': {transform: 'rotate(3deg)'},
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <title>Belajar TailwindCSS: Layouting</title>
+  <style type="text/tailwindcss">
+    #toggle:checked ~ label div.toggle-circle {
+      @apply translate-x-4;
+    }
+  </style>
+</head>
+<body class="dark:bg-slate-800 dark:text-slate-200">
+  <h1 class="text-6xl font-bold text-center my-8">Belajar <span class="bg-gradient-to-r from-blue-500 to-teal-400 bg-clip-text text-transparent">TailwindCSS</span></h1>
+
+  <!-- Layouting -->
+  <div class="container px-8 mx-auto">
+    <div class="border rounded-lg shadow-lg p-10 relative">
+      <div class="w-10 h-10 bg-pink-300 rounded-full flex absolute -top-5 -right-5 cursor-pointer"><span class="text-xl m-auto">❌</span></div>
+      <div class="w-10 h-10 bg-sky-200 rounded-full flex fixed bottom-5 right-5 cursor-pointer"><a href="#" class="text-xl m-auto">🔝<a/></div>
+      <img src="img/1.jpeg" alt="laptop" width="150" class="float-left mr-3">
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum perferendis odit saepe sequi facere suscipit repellat itaque! Blanditiis quos aliquid nobis. Ea dignissimos corrupti ut perspiciatis. Deserunt deleniti iusto itaque ex reiciendis beatae minus nobis suscipit alias. Ratione fugit ut magnam id reiciendis? Repellat, culpa odio eius aut hic recusandae?</p>
+    </div>
+  </div>
+
+  <div class="conatiner mx-auto border rounded-lg shadow-lg p-10 mt-20 columns-3">
+    <img src="https://source.unsplash.com/600x400" alt="image" class="mb-4">
+    <img src="https://source.unsplash.com/600x400" alt="image" class="mb-4">
+    <img src="https://source.unsplash.com/600x400" alt="image" class="mb-4">
+    <img src="https://source.unsplash.com/600x400" alt="image" class="mb-4">
+    <img src="https://source.unsplash.com/600x400" alt="image" class="mb-4">
+    <img src="https://source.unsplash.com/600x400" alt="image" class="mb-4">
+  </div>
+
+
+
+  <div class="mb-96"></div>
+
+  <script>
+    const checkbox = document.querySelector('#toggle');
+    const html = document.querySelector('html');
+
+    checkbox.addEventListener('click', function () { 
+      checkbox.checked ? html.classList.add('dark') : html.classList.remove('dark');
+    })
+  </script>
+</body>
+</html>

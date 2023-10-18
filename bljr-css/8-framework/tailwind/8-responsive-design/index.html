@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      // lightMode: 'class',
+      // mengubah mode sesuai dengan class yg diberikan
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          },
+          spacing: {
+            13: '3.25rem',
+          },
+          // custom font
+          fontFamily: {
+            inter: ['Inter'],
+          },
+          colors: {
+            'regal-blue': '#243c5a',
+            kopi: '#c0ffee'
+          }, 
+          animation: {
+            'spin-slow': 'spin 3s linear infinite',
+            'wiggle': 'wiggle 1s ease-in-out infinite',
+          },
+          keyframes: {
+            'wiggle': {
+              '0%, 100%': { transform: 'rotate(-3deg)'},
+              '50%': {transform: 'rotate(3deg)'},
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <title>Belajar TailwindCSS: Responsive Design</title>
+  <style type="text/tailwindcss">
+    #toggle:checked ~ label div.toggle-circle {
+      @apply translate-x-4;
+    }
+  </style>
+</head>
+<body class="dark:bg-slate-800 dark:text-slate-200">
+  <h1 class="text-6xl font-bold text-center my-8">Belajar <span class="bg-gradient-to-r from-blue-500 to-teal-400 bg-clip-text text-transparent">TailwindCSS</span></h1>
+
+  <!-- Responsive Design -->
+  <div class="container px-6 font-inter max-w-md mx-auto sm:max-w-xl md:max-w-5xl">
+    <h3 class="text-4xl font-bold text-slate-800 sm:text-5xl md:text-6xl">Juan <span class="text-sky-500">Axl</span></h3>
+    <img src="img/2.jpg" alt="Laptop" class="mt-4 rounded-xl shadow-xl sm:mt-6 sm:h-64 sm:w-full sm:object-cover sm:object-center">
+    <h2 class="mt-6 text-2xl font-semibold text-slate-800 sm:mt-8 sm:text-4xl">Belajar Programming</h2>
+    <p class="mt-2 text-slate-600 sm:mt-4 sm:text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quod, aliquid quasi ipsum nemo id harum ullam est quaerat nisi unde autem minus amet. Illum quae, quia consectetur sit, quaerat placeat ducimus esse error cumque expedita.</p>
+    <div class="mt-4 sm:mt-6">
+      <a href="#" class="inline-block px-5 py-3 bg-pink-600 text-white rounded-lg shadow-lg uppercase font-semibold tracking-wider text-sm sm:text-base">Follow</a>
+    </div>
+  </div>
+
+
+
+  <div class="mb-96"></div>
+
+  <script>
+    const checkbox = document.querySelector('#toggle');
+    const html = document.querySelector('html');
+
+    checkbox.addEventListener('click', function () { 
+      checkbox.checked ? html.classList.add('dark') : html.classList.remove('dark');
+    })
+  </script>
+</body>
+</html>
