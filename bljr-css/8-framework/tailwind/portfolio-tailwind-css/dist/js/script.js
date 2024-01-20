@@ -32,7 +32,7 @@ window.addEventListener('click', function (e) {
     hamburger.classList.remove('hamburger-active');
     navMenu.classList.add('hidden');
   }
-})
+});
 
 // Darkmode toggle
 const darkToggle = document.querySelector('#dark-toggle');
